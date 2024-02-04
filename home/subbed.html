@@ -1,0 +1,101 @@
+<html>
+    <head>
+        <title> Ani TV</title>
+        <link rel="stylesheet" href="style.css">
+        <meta name="viewport" contend="width=device-width, initial-scale=1">
+
+
+      
+    </head>
+    <body>
+     
+       
+
+     
+        <main>
+        <section id="banner">
+          
+                <h4 class="logo"> Ani Tv</h4>
+                 
+                <h2 class="headding"><u> Subbed Anime list</u></h2>
+                <div class="search">
+                    <form id="animeSearchForm" action="https://google.com/search" method="GET"   class="search-bar" >
+        
+                     
+                          <input type="text" placeholder="search anime..."name="q">
+        
+                          <button type="submit" ><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-search"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></svg></button>
+                    </form>
+
+                
+
+                </div>
+
+                </div>  
+
+
+
+                </div>
+
+<div >
+
+
+
+    
+</div>
+
+
+
+
+        </section>
+        <div id="sideNav">
+            <nav>
+                <ul>
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="subbed.html">Anime Subbed</a></li>
+                    <li><a href="dubbed.html">Anime Dubbed</a></li>
+                    <li><a href="#">Anime List</a></li>
+                    <li><a href="#">Reviews</a></li>
+                </ul>
+            </nav>
+        
+        </div>
+
+        <div id="manuBtn">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-align-justify"><line x1="3" x2="21" y1="6" y2="6"/><line x1="3" x2="21" y1="12" y2="12"/><line x1="3" x2="21" y1="18" y2="18"/></svg>
+        
+        </div>
+        
+    </main>
+
+
+        <script>
+            var menuBtn = document.getElementById("manuBtn");
+            var sideNav = document.getElementById("sideNav");
+            var menu = document.getElementById("man");
+            sideNav.style.right = "-250px"
+            menuBtn.onclick = function() {
+                if (sideNav.style.left === "-250px") {
+                    sideNav.style.left = "0";
+                    menuBtn.innerHTML = ` <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-x"><path d="M18 6 6 18"/><path d="m6 6 12 12"/></svg>   `
+                    
+                } else {
+                    sideNav.style.left = "-250px";
+                    menuBtn.innerHTML = `     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-align-justify"><line x1="3" x2="21" y1="6" y2="6"/><line x1="3" x2="21" y1="12" y2="12"/><line x1="3" x2="21" y1="18" y2="18"/></svg>
+        `
+                
+                
+                
+                }
+            };
+        
+        
+        
+           
+                
+        
+        
+            </script>
+    
+</body>
+</html>
